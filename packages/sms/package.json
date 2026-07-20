@@ -1,0 +1,23 @@
+{
+  "name": "@appkit/sms",
+  "version": "0.1.0",
+  "description": "SMS delivery — five providers (Twilio, Vonage, MessageBird, Plivo, Telnyx) via fetch, sealed-secret config, platform→tenant policy.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": ["src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/*.test.ts",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4.19.2"
+  }
+}
