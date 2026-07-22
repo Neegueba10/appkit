@@ -20,7 +20,7 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "quickjs-emscripten": "^0.31.0"
+    "@appkit/sandbox": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22",
