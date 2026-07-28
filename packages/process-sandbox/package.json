@@ -38,11 +38,13 @@
     "node": ">=22"
   },
   "keywords": [
-    "appkit",
-    "sandbox",
-    "bubblewrap",
     "agents",
-    "isolation"
+    "appkit",
+    "application-framework",
+    "bubblewrap",
+    "isolation",
+    "sandbox",
+    "typescript"
   ],
   "publishConfig": {
     "access": "public",

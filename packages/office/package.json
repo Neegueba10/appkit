@@ -1,0 +1,64 @@
+{
+  "name": "@appkit/office",
+  "version": "0.1.0",
+  "description": "Office-document authoring for AI agents and applications: HTML to .docx/.pdf via headless LibreOffice, plain-text precision edits inside .docx via Flat ODT, PDF concatenation via poppler, and declarative .xlsx workbooks via the optional exceljs adapter.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-package.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/*.test.ts",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "peerDependenciesMeta": {
+    "exceljs": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "exceljs": "^4.4.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "appkit",
+    "application-framework",
+    "docx",
+    "libreoffice",
+    "pdf",
+    "typescript",
+    "xlsx"
+  ],
+  "author": "Braedon Saunders",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braedonsaunders/appkit.git",
+    "directory": "packages/office"
+  },
+  "homepage": "https://github.com/braedonsaunders/appkit/tree/main/packages/office#readme",
+  "bugs": {
+    "url": "https://github.com/braedonsaunders/appkit/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist",
+    "linkDirectory": false,
+    "provenance": true
+  }
+}
